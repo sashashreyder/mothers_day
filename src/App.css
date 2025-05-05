@@ -44,6 +44,30 @@
   transition-delay: 0.5s;
 }
 
+.open-me {
+  position: absolute;
+  bottom: 125px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  animation: pulse 2s infinite;
+  pointer-events: none;
+  z-index: 100;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: translateX(-50%) scale(1); }
+  50% { transform: translateX(-50%) scale(1.1); }
+}
+
+.wrapper:hover .open-me {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
 .envelope {
   position: absolute;
   height: 100%;
@@ -135,7 +159,7 @@
   }
 
   .wrapper:hover .letter {
-    transform: translate(-50%, -320px) scale(1); /* подняли письмо выше */
+    transform: translate(-50%, -320px) scale(1); 
   }
 
   .letter p {
