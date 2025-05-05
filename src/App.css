@@ -46,27 +46,38 @@
 
 .open-me {
   position: absolute;
+  font-family: 'Caveat', cursive;
   bottom: 125px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 26px;
+  font-size: 32px;
   color: white;
   font-weight: bold;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-  animation: pulse 2s infinite;
   pointer-events: none;
   z-index: 100;
+
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
-@keyframes pulse {
-  0%, 100% { transform: translateX(-50%) scale(1); }
-  50% { transform: translateX(-50%) scale(1.1); }
-}
 
 .wrapper:hover .open-me {
   opacity: 0;
-  transition: opacity 0.5s ease;
 }
+
+.wrapper:not(:hover) .open-me {
+  animation: fadeInSimple 0.5s ease forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+@keyframes fadeInSimple {
+  to {
+    opacity: 1;
+  }
+}
+
 
 .envelope {
   position: absolute;
@@ -147,7 +158,7 @@
   @media (max-width: 640px) {
     .open-me {
       bottom: 80px;
-      font-size: 18px;
+      font-size: 24px;
     }
   }  
 
