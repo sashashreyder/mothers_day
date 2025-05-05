@@ -99,3 +99,49 @@
   transform: translate(-50%, -320px) scale(1);
   opacity: 1;
 }
+
+@media (max-width: 640px) {
+  .wrapper {
+    width: 280px;
+    height: 180px;
+  }
+
+  .lid {
+    border-right: 140px solid transparent;
+    border-left: 140px solid transparent;
+    border-bottom: 90px solid transparent;
+  }
+
+  .lid.one {
+    border-top: 90px solid #ce5e8a;
+  }
+
+  .lid.two {
+    border-top: 90px solid #f093b0;
+  }
+
+  .envelope {
+    border-right: 140px solid #f2b5c5;
+    border-bottom: 90px solid #e67e99;
+    border-left: 140px solid #f2b5c5;
+    border-top: 90px solid transparent;
+  }
+
+  .letter {
+    width: 220px;
+    padding: 16px;
+    font-size: 14px;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  .wrapper:hover .letter {
+    transform: translate(-50%, -320px) scale(1); /* подняли письмо выше */
+  }
+
+  .letter p {
+    font-size: 13px;
+    margin-top: 16px;
+  }
+}
+
+
