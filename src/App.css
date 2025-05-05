@@ -5,9 +5,9 @@
 }
 
 .wrapper {
-  height: 200px;
-  width: 300px;
-  background-color: #e07c66;
+  height: 280px;
+  width: 420px;
+  background-color: #e7a8b7; 
   position: relative;
   display: flex;
   justify-content: center;
@@ -20,16 +20,16 @@
   width: 100%;
   top: 0;
   left: 0;
-  border-right: 150px solid transparent;
-  border-bottom: 100px solid transparent;
-  border-left: 150px solid transparent;
+  border-right: 210px solid transparent;
+  border-bottom: 140px solid transparent;
+  border-left: 210px solid transparent;
   transform-origin: top;
   transition: transform 0.25s linear;
 }
 
-/* Lid when сlosed */
+/* Lid when closed */
 .lid.one {
-  border-top: 100px solid #a62828; 
+  border-top: 140px solid #ce5e8a; 
   transform: rotateX(0deg);
   z-index: 3;
   transition-delay: 0.75s;
@@ -38,7 +38,7 @@
 
 /* Lid when opened */
 .lid.two {
-  border-top: 100px solid #c74343; 
+  border-top: 140px solid #f093b0; 
   transform: rotateX(90deg);
   z-index: 1;
   transition-delay: 0.5s;
@@ -50,10 +50,10 @@
   width: 100%;
   top: 0;
   left: 0;
-  border-top: 100px solid transparent;
-  border-right: 150px solid #d94e4e; 
-  border-bottom: 100px solid #b93c3c; 
-  border-left: 150px solid #d94e4e; 
+  border-top: 140px solid transparent;
+  border-right: 210px solid #f2b5c5; 
+  border-bottom: 140px solid #e67e99; 
+  border-left: 210px solid #f2b5c5; 
   z-index: 3;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
@@ -62,25 +62,27 @@
   position: absolute;
   top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.8); 
-  width: 260px;
-  height: auto;
-  max-height: 300px;
-  background-color: white;
+  font-family: 'Merriweather', serif;
+  transform: translate(-50%, -50%) scale(0.6);
+  width: 340px;
+  max-height: 360px;
+  background-color: #fffaf5; 
+  border: 2px solid #f2c9d3;
   border-radius: 15px;
   z-index: 2;
-  padding: 20px;
+  padding: 24px;
   opacity: 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: all 0.8s ease;
+  transition: all 1s ease;
   overflow-y: auto;
 }
 
 .letter p {
   text-align: center;
-  font-size: 12px;
-  margin-top: 30px;
+  font-size: 15px;
+  margin-top: 16px;
   color: #3B4049;
+  line-height: 1.5;
 }
 
 .wrapper:hover .lid.one {
@@ -89,11 +91,11 @@
 }
 
 .wrapper:hover .lid.two {
-    transform: rotateX(180deg);
-    transition-delay: 0.25s;
+    transform: rotateX(150deg);
+    transition-delay: 0.18s;
 }
 
 .wrapper:hover .letter {
-  transform: translate(-50%, -350px) scale(1); 
+  transform: translate(-50%, -320px) scale(1);
   opacity: 1;
 }
