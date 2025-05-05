@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="min-h-screen bg-gradient-to-b from-red-100 to-red-300 flex flex-col items-center justify-center p-8">
+      <div className="bg-white rounded-2xl shadow-xl p-10 max-w-xl text-center">
+        <h1 className="text-4xl font-bold text-red-600 mb-4">С Днём Матери!</h1>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+
+      <div className="wrapper">
+        <div className="lid one"></div>
+        <div className="lid two"></div>
+        <div className="envelope"></div>
+        <div className="letter">
+           <p>Мамочка, спасибо тебе за твою любовь, заботу и тепло.<br />
+          Ты — наше солнышко, наша поддержка, наше всё.<br />
+          Пусть каждый день приносит тебе радость и спокойствие. </p>
+
+        <p className="text-sm text-gray-500">С любовью, твоя Саша 💌</p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+    </div>
+    </div>
   )
 }
 
 export default App
+
