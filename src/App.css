@@ -49,7 +49,7 @@
   bottom: 125px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 24px;
+  font-size: 26px;
   color: white;
   font-weight: bold;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
@@ -143,6 +143,13 @@
   .lid.two {
     border-top: 90px solid #f093b0;
   }
+
+  @media (max-width: 640px) {
+    .open-me {
+      bottom: 80px;
+      font-size: 18px;
+    }
+  }  
 
   .envelope {
     border-right: 140px solid #f2b5c5;
