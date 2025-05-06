@@ -61,8 +61,13 @@
   transition: opacity 0.5s ease;
 }
 
+.wrapper:hover .open-me {
+  display: none;
+  transform: translate(-50%, -65%) scale(1);
+}
+
 .fade-in {
-  animation: fadeIn 0.6s ease forwards;
+  animation: fadeIn 0.5s ease forwards;
 }
 
 @keyframes fadeIn {
