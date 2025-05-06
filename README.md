@@ -1,3 +1,39 @@
+# Mother's Day Letter 💌
+
+A heartfelt animated Mother's Day greeting created with **React**, **Tailwind CSS**, and a touch of 💖.  
+The interactive envelope opens on hover to reveal a warm letter, with floating animation and a compliment carousel below.
+
+---
+
+## 🛠 Technologies Used
+
+- **React** (with Vite)
+- **Tailwind CSS** (for fast, modern styling)
+- **TypeScript**
+- **Cypress** (initially used for tests, then removed)
+- **Vanta.js** (animated background)
+- **Custom CSS animations**
+
+---
+
+## ✨ Features
+
+- Floating envelope animation
+- On hover: animated letter pops up smoothly
+- "Open me ✉️" text fades in/out depending on user interaction
+- Compliment carousel scrolling infinitely with soft glow
+- Fully responsive design (mobile, tablet, desktop)
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/yourusername/mothers_day_letter.git
+cd mothers_day_letter
+npm install
+npm run dev
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
