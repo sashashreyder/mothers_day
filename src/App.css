@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #c617cc;
+}
+
 .wrapper {
   height: 280px;
   width: 420px;
@@ -12,7 +16,7 @@
   display: flex;
   justify-content: center;
   z-index: 0;
-  margin-top: 50px;
+  margin-top: 160px;
 }
 
 .lid {
@@ -130,7 +134,7 @@
 }
 
 .wrapper:hover .letter {
-  transform: translate(-49%, -250px) scale(1); 
+  transform: translate(-49%, -260px) scale(1); 
   opacity: 1;
 }
 
