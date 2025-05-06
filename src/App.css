@@ -132,6 +132,19 @@
   opacity: 1;
 }
 
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
 @media (max-width: 640px) {
   .wrapper {
     width: 280px;

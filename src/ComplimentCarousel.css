@@ -1,0 +1,36 @@
+.carousel-outer {
+    overflow: hidden;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  
+  .carousel-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll-left 40s linear infinite;
+  }
+  
+  .carousel-card {
+    flex: 0 0 auto;
+    width: 220px;
+    margin: 0 12px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-33.333%);
+    }
+  }
+  
+  
+  
+  
