@@ -3,11 +3,11 @@ import './ComplimentCarousel.css';
 const compliments = [
     {
       text: 'Ты моё самое тёплое воспоминание',
-      img: 'https://png.pngtree.com/png-clipart/20231003/original/pngtree-beautiful-guinea-pig-png-image_13081832.png', //+
+      img: 'https://png.pngtree.com/png-clipart/20231003/original/pngtree-beautiful-guinea-pig-png-image_13081832.png', 
     },
     {
       text: 'Ты учишь меня любить по-настоящему',
-      img: 'https://www.pngarts.com/files/2/Disney-Valentines-Day-PNG-Download-Image.png', //+
+      img: 'https://www.pngarts.com/files/2/Disney-Valentines-Day-PNG-Download-Image.png', 
     },
     {
       text: 'Ты делаешь дом домом',
@@ -23,11 +23,11 @@ const compliments = [
     },
     {
       text: 'Ты красивая, умная и сильная',
-      img: 'https://artpoin.com/wp-content/uploads/2023/11/artpoin-mickey62.png', //+
+      img: 'https://artpoin.com/wp-content/uploads/2023/11/artpoin-mickey62.png', 
     },
     {
       text: 'Ты всегда знаешь, что сказать',
-      img: 'https://ustroim-prazdnik.info/_ph/15/394348439.png?1567752224', //+
+      img: 'https://ustroim-prazdnik.info/_ph/15/394348439.png?1567752224', 
     },
     {
       text: 'Ты делаешь этот мир мягче',
@@ -35,7 +35,7 @@ const compliments = [
     },
     {
       text: 'Ты даришь свет даже в серые дни',
-      img: 'https://static.vecteezy.com/system/resources/thumbnails/018/972/609/small_2x/cute-sun-illustration-design-png.png',
+      img: 'https://images.vexels.com/media/users/3/256323/isolated/preview/87838d67f8e13ad5aeb892fc320f724f-sol-lindo.png',
     },
     {
       text: 'Ты мой главный человек',
