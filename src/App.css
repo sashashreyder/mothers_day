@@ -130,7 +130,7 @@
 }
 
 .wrapper:hover .letter {
-  transform: translate(-50%, -280px) scale(1); 
+  transform: translate(-49%, -250px) scale(1); 
   opacity: 1;
 }
 
