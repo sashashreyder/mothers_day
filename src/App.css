@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   z-index: 0;
+  margin-top: 50px;
 }
 
 .lid {
@@ -73,7 +74,6 @@
   }
 }
 
-
 .envelope {
   position: absolute;
   height: 100%;
@@ -84,11 +84,8 @@
   border-right: 210px solid #f2b5c5; 
   border-bottom: 140px solid #e67e99; 
   border-left: 210px solid #f2b5c5; 
-  z-index: 3;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
-
 
 .letter {
   position: absolute;
@@ -128,7 +125,7 @@
 }
 
 .wrapper:hover .letter {
-  transform: translate(-50%, -320px) scale(1);
+  transform: translate(-50%, -280px) scale(1); 
   opacity: 1;
 }
 
@@ -143,6 +140,28 @@
 
 .animate-float {
   animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@media (max-width: 1024px) {
+  .wrapper:hover .letter {
+    transform: translate(-50%, -250px) scale(1);
+    opacity: 1;
+  }
+
+  .carousel-track {
+    animation-duration: 40s;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper:hover .letter {
+    transform: translate(-50%, -230px) scale(1);
+    opacity: 1;
+  }
+
+  .carousel-track {
+    animation-duration: 30s;
+  }
 }
 
 @media (max-width: 640px) {
@@ -185,13 +204,15 @@
   }
 
   .wrapper:hover .letter {
-    transform: translate(-50%, -320px) scale(1); 
+    transform: translate(-50%, -320px) scale(1);
   }
 
   .letter p {
     font-size: 13px;
     margin-top: 16px;
   }
+
+  .carousel-track {
+    animation-duration: 20s;
+  }
 }
-
-
