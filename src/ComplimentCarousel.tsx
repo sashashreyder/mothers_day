@@ -3,43 +3,43 @@ import './ComplimentCarousel.css';
 const compliments = [
     {
       text: 'Ты моё самое тёплое воспоминание',
-      img: 'https://i.pinimg.com/564x/31/3f/9e/313f9eb13e60a0f790b85f37b7e2d16f.jpg',
+      img: 'https://png.pngtree.com/png-clipart/20231003/original/pngtree-beautiful-guinea-pig-png-image_13081832.png', //+
     },
     {
       text: 'Ты учишь меня любить по-настоящему',
-      img: 'https://i.pinimg.com/564x/70/44/c6/7044c69ad5e71534038d8f3f4071ffb3.jpg',
+      img: 'https://www.pngarts.com/files/2/Disney-Valentines-Day-PNG-Download-Image.png', //+
     },
     {
       text: 'Ты делаешь дом домом',
-      img: 'https://i.pinimg.com/564x/6c/b4/f5/6cb4f5a6b12276ef87094e69cfb2e179.jpg',
+      img: 'https://png.pngtree.com/png-vector/20240607/ourmid/pngtree-happy-bear-family-cartoon-png-image_12638244.png',
     },
     {
       text: 'С тобой я чувствую себя в безопасности',
-      img: 'https://i.pinimg.com/564x/9c/32/01/9c32012f10a1fd911a3e5954208db234.jpg',
+      img: 'https://static.vecteezy.com/system/resources/thumbnails/026/849/879/small_2x/pink-heart-hugging-yourself-png.png',
     },
     {
       text: 'Ты умеешь сделать обычный день особенным',
-      img: 'https://i.pinimg.com/564x/5b/f8/b2/5bf8b2b7b80d49cf06e0fd7b52fcf2d3.jpg',
+      img: 'https://artpoin.com/wp-content/uploads/2021/08/mickei2123232323231312323231233.png',
     },
     {
       text: 'Ты красивая, умная и сильная',
-      img: 'https://i.pinimg.com/564x/62/4b/5a/624b5a30850db632314cba104d18265d.jpg',
+      img: 'https://artpoin.com/wp-content/uploads/2023/11/artpoin-mickey62.png', //+
     },
     {
       text: 'Ты всегда знаешь, что сказать',
-      img: 'https://i.pinimg.com/564x/ba/e7/bb/bae7bbc946d3271e770ec95eb6e8f4f4.jpg',
+      img: 'https://ustroim-prazdnik.info/_ph/15/394348439.png?1567752224', //+
     },
     {
       text: 'Ты делаешь этот мир мягче',
-      img: 'https://i.pinimg.com/564x/d9/9d/40/d99d4032dbf73082e30f85f7ff3fa79a.jpg',
+      img: 'https://png.pngtree.com/png-vector/20231123/ourmid/pngtree-exotic-shorthair-cat-white-brown-png-image_10691434.png',
     },
     {
       text: 'Ты даришь свет даже в серые дни',
-      img: 'https://i.pinimg.com/564x/8b/3f/5c/8b3f5c9dd9de95e2a2e43d7b205e51b6.jpg',
+      img: 'https://static.vecteezy.com/system/resources/thumbnails/018/972/609/small_2x/cute-sun-illustration-design-png.png',
     },
     {
       text: 'Ты мой главный человек',
-      img: 'https://i.pinimg.com/564x/65/50/16/6550162e541b876725a4de95b3e6eb8f.jpg',
+      img: 'https://png.pngtree.com/png-clipart/20220404/original/pngtree-mothers-day-hug-silhouette-png-image_7512406.png',
     },
   ];  
   

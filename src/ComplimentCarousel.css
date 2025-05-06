@@ -7,7 +7,7 @@
   .carousel-track {
     display: flex;
     width: fit-content;
-    animation: scroll-left 90s linear infinite;
+    animation: scroll-left 20s linear infinite;
   }
   
   .carousel-card {
