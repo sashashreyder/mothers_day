@@ -1,23 +1,26 @@
 import './App.css'
 import VantaBackground from './VantaBackground'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import ComplimentCarousel from './ComplimentCarousel'
 
 function App() {
   const [showOpenMe, setShowOpenMe] = useState(true)
   const [fadeIn, setFadeIn] = useState(false)
 
-  const handleMouseEnter = () => {
-    setShowOpenMe(false)
-    setFadeIn(false)
-  }
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null)
 
-  const handleMouseLeave = () => {
-    setTimeout(() => {
-      setFadeIn(true)
-      setShowOpenMe(true)
-    }, 2000)
-  }
+const handleMouseEnter = () => {
+  if (timeoutRef.current) clearTimeout(timeoutRef.current)
+  setShowOpenMe(false)
+  setFadeIn(false)
+}
+
+const handleMouseLeave = () => {
+  timeoutRef.current = setTimeout(() => {
+    setFadeIn(true)
+    setShowOpenMe(true)
+  }, 1000)
+}
 
   return (
     <div className="relative min-h-screen overflow-hidden flex items-center justify-center">
@@ -28,7 +31,7 @@ function App() {
 
         <div className="wrapper animate-float" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           {showOpenMe && (
-           <p className={`open-me ${fadeIn ? 'fade-in' : ''} animate-floatSmooth`}>Открой меня ✉️</p>
+           <p className={`open-me ${fadeIn ? 'fade-in' : ''} animate-floatSmooth`}>Открой Меня</p>
           )}
 
           <div className="lid one"></div>
