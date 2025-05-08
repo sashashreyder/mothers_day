@@ -102,7 +102,7 @@ body {
   left: 50%;
   font-family: 'Merriweather', serif;
   transform: translate(-50%, -50%) scale(0.5);
-  width: 340px;
+  width: 650px;
   max-height: 360px;
   background-color: #fffaf5; 
   border: 2px solid #f2c9d3;
@@ -111,13 +111,13 @@ body {
   padding: 24px;
   opacity: 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: all 1s ease;
+  transition: all 2s ease;
   overflow-y: auto;
 }
 
 .letter p {
   text-align: center;
-  font-size: 15px;
+  font-size: 26px;
   margin-top: 16px;
   color: #3B4049;
   line-height: 1.5;
@@ -134,7 +134,8 @@ body {
 }
 
 .wrapper:hover .letter {
-  transform: translate(-49%, -260px) scale(1); 
+  position: absolute;
+  top: 30px;
   opacity: 1;
 }
 
@@ -151,27 +152,6 @@ body {
   animation: floatUpDown 3s ease-in-out infinite;
 }
 
-@media (max-width: 1024px) {
-  .wrapper:hover .letter {
-    transform: translate(-50%, -250px) scale(1);
-    opacity: 1;
-  }
-
-  .carousel-track {
-    animation-duration: 40s;
-  }
-}
-
-@media (max-width: 768px) {
-  .wrapper:hover .letter {
-    transform: translate(-50%, -230px) scale(1);
-    opacity: 1;
-  }
-
-  .carousel-track {
-    animation-duration: 30s;
-  }
-}
 
 @media (max-width: 640px) {
   .wrapper {
@@ -206,18 +186,14 @@ body {
   }
 
   .letter {
-    width: 220px;
+    width: 420px;
     padding: 16px;
     font-size: 14px;
     transform: translate(-50%, -50%) scale(0.6);
   }
 
-  .wrapper:hover .letter {
-    transform: translate(-50%, -320px) scale(1);
-  }
-
   .letter p {
-    font-size: 13px;
+    font-size: 20px;
     margin-top: 16px;
   }
 
